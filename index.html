@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./tailwindstyle.css" rel="stylesheet">
+    <title>Tailwind Dashboard</title>
+    <script src="https://kit.fontawesome.com/32e3b87006.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div style="background-image: url('./images/back.jpg');" class="w-screen h-screen">
+        <div class="flex rounded-full w-auto h-auto bg-slate-400 absolute bg-opacity-60 left-20 top-1/3">
+            <ul class="mx-auto text-xl p-3">
+                <li><i class="fa-regular fa-circle-play mt-5 ml-0.5" style="color:white;"></i></li>
+                <li><i class="fa-solid fa-table mt-5 ml-0.5" style="color:white;"></i></li>
+                <li><i class="fa-solid fa-maximize mt-5 ml-0.5" style="color:white;"></i></li>
+                <li><i class="fa-solid fa-wifi mt-5" style="color: white;"></i></li>
+                <li><i class="fa-solid fa-microphone-lines mt-5 ml-1" style="color: white;"></i></li>
+                <li><i class="fa-solid fa-magnifying-glass my-5 ml-0.5" style="color: white;"></i></li>
+            </ul>
+        </div>
+        <div class="flex rounded-[35px] w-10/12 h-[85%] bg-slate-400 bg-opacity-60 absolute right-20 top-14 ">
+            <div class="flex flex-col rounded-[35px 0px] w-3/12 bg-slate-800 rounded-[35px] opacity-75 h-auto ">
+                <img class="flex mx-auto bg-opacity-0 rounded-[35px] object-cover w-auto h-[80px]" src="./images/hulu.png">
+                <ul class="text-[14px] ml-10">
+                    <li class="pt-5 font-bold text-white"><i class="fa-solid fa-house fa-beat-fade mr-3" style="color: #23BE76"></i>Home</li>
+                    <li class="pt-5 text-slate-400"><i class="fa-solid fa-square-check ml-0.5 mr-3" style="color: #b4b6b8"></i>My Stuff</li>
+                    <li class="pt-5 text-slate-400"><i class="fa-solid fa-tv mr-2.5" style="color: #b4b6b8"></i>TV</li>
+                    <li class="pt-5 text-slate-400"><i class="fa-solid fa-video ml-0.5 mr-3" style="color: #b4b6b8"></i>Movies</li>
+                </ul>
+                <!-- New Shows -->
+                <span class="mx-auto mt-3 text-xl text-[#23BE76] font-extrabold">New on HULU</span>
+                <ul class="mt-3">
+                    <li class="mt-3">
+                        <div class="relative h-[150px] w-[fit-content] mx-auto">
+                            <img class="rounded-3xl max-w-full h-[150px] object-contain" src="./images/theBanshees.png">
+                            <div class="absolute bottom-0 left-0 bg-white bg-opacity-75 w-full flex justify-between items-center rounded-3xl font-bold p-2">
+                                <p class="text-black text-sm">The Banshees</p>
+                                <button class="text-black text-sm">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mt-3">
+                        <div class="relative h-[150px] w-[fit-content] mx-auto">
+                            <img class="rounded-3xl max-w-full h-[150px] object-contain" src="./images/WTW.png">
+                            <div class="absolute bottom-0 left-0 bg-white bg-opacity-75 w-full flex justify-between items-center rounded-3xl font-bold p-2">
+                                <p class="text-black text-sm">What's The Word</p>
+                                <button class="text-black text-sm">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="flex rounded-[0px 35px] w-9/12 h-auto bg-slate-500 opacity-30">
+
+            </div>
+        </div>
+        <div class="flex rounded-[35px] w-[62.5%] h-[85%] absolute right-20 top-14 ">
+            <!-- Right Panel -->
+            <div class="flex flex-col w-full bg-slate-500 bg-opacity-60 opacity-100 h-full rounded-r-[35px] p-4">
+                <!-- Top Nav Bar -->
+                <div class="flex justify-between items-center mb-4">
+                    <!-- Left Side -->
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-chevron-right pr-4" style="color: #ffffff;"></i>
+                        <input type="text" placeholder="Search ..." class="rounded-full p-2">
+                    </div>
+                    <!-- Right Side -->
+                    <div class="flex items-center space-x-2">
+                        <button class="text-white text-2xl"><i class="fa-regular fa-bell"></i></button>
+                        <div class="relative">
+                            <div class="absolute -top-1 -right-1 bg-slate-500 w-3 h-3 rounded-full"></div>
+                        </div>
+                        <div class="text-white pl-4">User</div>
+                        <i class="fa-solid fa-user text-2xl" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <!-- Hero Movie Section -->
+                <section class="text-white relative mb-0 pb-0">
+                    <!-- Background Image -->
+                    <img src="./images/parasiteHero.jpg" alt="Parasite" class="w-full object-cover h-[250px] opacity-75 rounded-[50px]">
+                    
+                    <!-- Text and Logo Overlay -->
+                    <div class="absolute inset-0 flex flex-col items-start justify-center p-8">
+                    <!-- Logo Image for Parasite -->
+                    <img src="./images/Parasite_Logo.png" alt="Parasite Logo" class="w-40 rounded-full">
+                    
+                    <!-- Movie Details -->
+                    <p class="mt-2 text-black bg-white p-2 text-xs rounded-full font-extrabold">2019 - Drama - Bong Joon Ho</p>
+                    
+                    <!-- Buttons -->
+                    <div class="mt-4">
+                        <button class="bg-green-600 text-white px-4 py-2 mr-2 rounded-full">Watch</button>
+                        <button class="bg-white text-black px-4 py-2 rounded-full font-extrabold">+</button>
+                    </div>
+                    </div>
+                </section>
+                <!-- For You Section -->
+                <section class=" text-white py-0">
+                    <h2 class="text-left text-2xl my-3 font-bold">For You</h2>
+                    
+                    <div class="container mx-auto grid grid-cols-4 gap-8">
+                    <!-- Movie 1 -->
+                    <div class="relative">
+                        <img src="./images/stay.jpg" alt="Stay" class="w-full h-20 object-cover rounded-3xl">
+                        <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 p-2 rounded-3xl">
+                        <h3 class="text-sm">Stay</h3>
+                        <p class="text-xs">2005 - R</p>
+                        </div>
+                        <div class="absolute bottom-2 right-2">
+                        <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <img src="./images/whiplash.jpg" alt="whiplash" class="w-full h-20 object-cover rounded-3xl">
+                        <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 p-2 rounded-3xl">
+                        <h3 class="text-sm">Whiplash</h3>
+                        <p class="text-xs">2014 - R</p>
+                        </div>
+                        <div class="absolute bottom-2 right-2">
+                        <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <img src="./images/alone.jpg" alt="alone" class="w-full h-20 object-cover rounded-3xl">
+                        <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 p-2 rounded-3xl">
+                        <h3 class="text-sm">Alone</h3>
+                        <p class="text-xs">2020 - R </p>
+                        </div>
+                        <div class="absolute bottom-2 right-2">
+                        <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <img src="./images/burn.jpg" alt="Burn" class="w-full h-20 object-cover rounded-3xl">
+                        <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 p-2 rounded-3xl">
+                        <h3 class="text-sm">Burn</h3>
+                        <p class="text-xs">2019 - R</p>
+                        </div>
+                        <div class="absolute bottom-2 right-2">
+                        <i class="fas fa-info-circle"></i>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <!-- Keep Watching Section -->
+                <section class="text-white py-0">
+                    <h2 class="text-left text-2xl my-3 pt-0 font-bold">Keep Watching</h2>
+                    
+                    <div class="container mx-auto grid grid-cols-4 gap-8">
+                    <!-- Movie 1 -->
+                    <div class="relative">
+                        <img src="./images/cruel.jpg" alt="Movie 1" class="w-full h-20 object-cover rounded-3xl">
+                        <!-- Play Icon -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                        <i class="fas fa-play text-white text-xl"></i>
+                        </div>
+                        <!-- Bottom Div -->
+                        <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-70 h-1/3 p-2 rounded-3xl">
+                        <h3 class="text-sm align-middle">Cruel Summer </h3> 
+                        <!-- Progress Bar -->
+                        <div class="bg-gray-600 inset-x-0 h-1 mt-1 rounded-full">
+                            <div class="bg-green-500 h-1 w-1/3 rounded-full"></div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <img src="./images/fargo.jpg" alt="Fargo" class="w-full h-20 object-cover rounded-3xl">
+                        <!-- Play Icon -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                        <i class="fas fa-play text-white text-xl"></i>
+                        </div>
+                        <!-- Bottom Div -->
+                        <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-70 h-1/3 p-2 rounded-3xl">
+                        <h3 class="text-sm align-middle">Fargo</h3>
+                        <!-- Progress Bar -->
+                        <div class="bg-gray-600 inset-x-0 h-1 mt-1 rounded-full">
+                            <div class="bg-green-500 h-1 w-3/5 rounded-full"></div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <img src="./images/hannibal.jpg" alt="hannibal" class="w-full h-20 object-cover rounded-3xl">
+                        <!-- Play Icon -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                        <i class="fas fa-play text-white text-xl"></i>
+                        </div>
+                        <!-- Bottom Div -->
+                        <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-70 h-1/3 p-2 rounded-3xl">
+                        <h3 class="text-sm align-middle">Hannibal</h3>
+                        <!-- Progress Bar -->
+                        <div class="bg-gray-600 inset-x-0 h-1 mt-1 rounded-full">
+                            <div class="bg-green-500 h-1 w-1/12 rounded-full"></div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <img src="./images/ahs.jpg" alt="american horror stories" class="w-full h-20 object-cover rounded-3xl">
+                        <!-- Play Icon -->
+                        <div class="absolute inset-0 flex items-center justify-center">
+                        <i class="fas fa-play text-white text-xl"></i>
+                        </div>
+                        <!-- Bottom Div -->
+                        <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-70 h-1/3 p-2 rounded-3xl">
+                        <h3 class="text-sm align-middle">American Horror Stories</h3>
+                        <!-- Progress Bar -->
+                        <div class="bg-gray-600 inset-x-0 h-1 mt-1 rounded-full">
+                            <div class="bg-green-500 h-1 w-10/12 rounded-full"></div>
+                        </div>
+                        </div>
+                    </div>  
+                    <!-- (Repeat for Movie 2, Movie 3, and Movie 4) -->
+                    </div>
+                </section>
+                    </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
